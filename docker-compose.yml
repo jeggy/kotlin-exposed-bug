@@ -1,0 +1,12 @@
+version: '3.7'
+
+services:
+  db_maria:
+    image: mariadb
+    environment:
+      - MYSQL_DATABASE=delivery
+      - MYSQL_USER=test
+      - MYSQL_PASSWORD=test
+      - MYSQL_ROOT_PASSWORD=test
+    ports:
+      - 3311:3306
